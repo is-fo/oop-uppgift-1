@@ -27,6 +27,7 @@ public abstract class Växt implements StringRepresentable, WaterAmountable {
             case PALM -> växtTyp.volumeAmount * height;
             case KAKTUS -> växtTyp.volumeAmount; //OBS: ger svaret i centiliter
             case KÖTTÄTANDE -> Köttätande.getNutritionBaseAmount() + (växtTyp.volumeAmount * this.height);
+            default -> Double.NaN;
         };
     }
     @Override
