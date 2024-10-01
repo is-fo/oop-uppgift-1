@@ -1,6 +1,7 @@
 package växthotellet.contract;
 
 public enum VäxtInfo {
+
     PALM (0.5, "liter", "mineralvatten"),
     KAKTUS (2, "centiliter", "vatten"),
     KÖTTÄTANDE (0.2, "liter", "proteindryck");

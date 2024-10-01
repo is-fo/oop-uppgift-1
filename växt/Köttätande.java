@@ -9,6 +9,7 @@ public class Köttätande extends Växt {
     protected static double getNutritionBaseAmount() {
         return NUTRITION_BASE_AMOUNT;
     }
+
     public Köttätande(String name, double height) {
         super(name, height, VäxtInfo.KÖTTÄTANDE);
     }

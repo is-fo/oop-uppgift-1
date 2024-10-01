@@ -16,12 +16,14 @@ public abstract class Växt implements StringRepresentable, WaterAmountable {
         this.height = setHeight(height);
         this.växtTyp = växtTyp;
     }
+
     public double setHeight(double height) {
         if (height < 0) {
             return 0;
         }
         else return height;
     }
+
      public double getWaterAmount() {
         return switch (växtTyp) {
             case PALM -> växtTyp.volumeAmount * height;
@@ -30,6 +32,7 @@ public abstract class Växt implements StringRepresentable, WaterAmountable {
             default -> Double.NaN;
         };
     }
+
     @Override
     public String getDetails() {
         return name + " behöver " + getWaterAmount() + " " + växtTyp.volumeUnit + " " + växtTyp.nutrientType;
